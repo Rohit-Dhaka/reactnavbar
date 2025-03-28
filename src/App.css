@@ -15,7 +15,14 @@
 }
 
 .bar1{
-    transform: rotate(45deg)  translateY(7px);
+    transform: rotate(45deg)  translateY(8.5px);
+}
+
+.bar2{
+    opacity: 0;
+}
+.bar3{
+    transform: rotate(-45deg) translateY(-8.5px);
 }
 
 
