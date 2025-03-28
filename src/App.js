@@ -1,9 +1,10 @@
 import React from "react";
 import "./App.css";
-import Home from "./components/Home";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Box from "./components/Box";
+import Hero from "./components/Hero";
 import About from "./components/About";
+import Help from "./components/Help";
+
 
 
 
@@ -13,10 +14,11 @@ import About from "./components/About";
 function App() {
   return (
     <>
-    
-    <Home/>
+    <Hero/>
     <About/>
-    <Box/>
+    <Help/>
+    
+   
     
     </>
   );
