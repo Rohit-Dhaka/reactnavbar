@@ -1,9 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Hero from "./components/Hero";
-import About from "./components/About";
-import Help from "./components/Help";
+import Navbar from "./components/Navbar";
+import { CountContext } from "./context/context";
 
 
 
@@ -11,15 +10,22 @@ import Help from "./components/Help";
 
 
 
-function App() {
+
+function App() {  
+  const [count ,setCount] = useState(0)
+
   return (
-    <>
-    <Hero/>
-    <About/>
-    <Help/>
+    <>  
     
-   
-    
+    <CountContext.Provider value={count}>
+
+    <button onClick={()=>setCount(count + 1)}> Click me</button>
+    <Navbar/>
+
+    </CountContext.Provider>
+           
+
+      
     </>
   );
 }
