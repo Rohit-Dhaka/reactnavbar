@@ -24,6 +24,11 @@
     transform: rotate(-45deg) translateY(-8.5px);
 
 }
+/* .box{
+    padding: 20px;
+    width: 100%;
+    border: 1px solid red !important;
+} */
 @media (max-width:768px) {
     .menulist{
         background-color: red;

@@ -3,11 +3,7 @@ import "./App.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from "./components/Navbar";
 import { CountContext } from "./context/context";
-
-
-
-
-
+import Slider from "./components/Slider";
 
 
 
@@ -16,13 +12,15 @@ function App() {
 
   return (
     <>  
+    <Slider/>
     
-    <CountContext.Provider value={count}>
+    {/* <CountContext.Provider value={count}>
 
     <button onClick={()=>setCount(count + 1)}> Click me</button>
     <Navbar/>
+    
 
-    </CountContext.Provider>
+    </CountContext.Provider> */}
            
 
       
